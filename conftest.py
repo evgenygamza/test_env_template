@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __Author__ = 'Gamza'
 import pytest
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -39,5 +40,6 @@ def browser(request):
 
     yield browser
 
+    time.sleep(5)
     print("\nquit browser..")
     browser.quit()
