@@ -23,8 +23,8 @@ class ProductPage(BasePage):
         assert '0.00' not in cart_price, 'cart is empty!'
         assert 'Coders at Work' == book_name, 'incorrect book name!'
 
-    def check_not_the_success_mes(self):
+    def check_not_the_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.BOOK_NAME), 'success message exists!'
 
-    def check_success_mes_id_disappear(self):
+    def check_success_message_id_disappear(self):
         assert self.is_disappeared(*ProductPageLocators.BOOK_NAME), 'success message didn`t disappeared!'
