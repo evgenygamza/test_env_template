@@ -1,4 +1,11 @@
 # test_env_template
 
-I suggest to use this repository 
+**Now repo is ready for Grand Review**  
+
+
+  
+  
+In future
+I'm going to use this repository 
 as a template for new test projects
+
